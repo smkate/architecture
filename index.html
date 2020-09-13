@@ -1,29 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<title>Сайт Biloba</title>
+	<title>Modern World</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <meta name="description" content="Здесь будет описание страницы сайта. То, что видно пользователю при поисковой выдаче. (Длина description должна быть не менее 70 и более 150-200 символов)">
-    <meta name="keywords" content="Здесь должны быть ключевые слова, не более 6 слов и 3 повторов">
-
-
-  <link rel="stylesheet" async type="text/css" href="styles/bootstrap.css">
-  <link rel="stylesheet" async type="text/css" href="styles/style.css">
-  <link rel="stylesheet" async type="text/css" href="styles/jquery.bxslider.css">
-  <link rel="stylesheet" async href="font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" async type="text/css" href="styles/animate.css">
-  <link async href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css" />
-  <link rel="shortcut icon" type="text/css" href="images/logo-biloba.png">
-  <!-- conect owl carousel -->
-  <link rel="stylesheet" href="js/owlcarousel/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="js/owlcarousel/css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link async href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="shortcut icon" type="text/css" href="images/logo-architecture.jpg">
+    <meta name="format-detection" content="telephone=no">
 </head>
 <body>
-	<div id="Go_Top">
-    <a href="#"><i class="fa fa-angle-up" aria-hidden="true"></i><span>Наверх</span></a>
+<div class="go-top">
+    <a href="#top"><i class="fa fa-angle-up" aria-hidden="true"></i><span>Наверх</span></a>
 </div>
 <div class="navbar navbar-fixed-top" role="navigation">
   <div class="container">
@@ -33,7 +23,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+      <a class="navbar-brand" href="#top"><img src="images/logo.png"></a>
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-left">
@@ -50,15 +40,15 @@
 <div class="fixed-sidebar">
   <div class="we-are"><h4>Modern</h4></div>
   <div class="social">
-    <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
-    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    <a href=""><i class="fa fa-vk" aria-hidden="true"></i></a>
+    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
   </div>
 </div>
 <!-- end header -->
 
 <!-- main -->
-<div class="container-fluid main post">
+<div id="top" class="container-fluid main post fade-in">
     <div class="row center">
       <div class="container-fluid main-wrap">
         <h2>современная архитектура</h2>
@@ -68,39 +58,36 @@
 </div>
 
 <!-- hydrodynamics -->
-<div id="about" class="container wrap hydrodynamics post">
+<div id="about" class="container wrap hydrodynamics post fade-in">
   <div class="row"> 
     <div class="col-lg-4 col-md-4 col-sm-12">
       <!-- Carousel -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide">
        <!-- Indicators -->
         <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li class="dot" onclick="currentSlide(1)" class="active"></li>
+          <li class="dot" onclick="currentSlide(2)"></li>
+          <li class="dot" onclick="currentSlide(3)"></li>
         </ol>
       <div class="carousel-inner">
-        <div class="item active">
+        <div class="item active fade-slide">
           <img src="images/tiomothy-swope-zwe--GYIZtc-unsplash.jpg" alt="First slide">
         </div>
-        <div class="item">
+        <div class="item fade-slide">
           <img src="images/zane-lee-joJvfijEc4s-unsplash.jpg" alt="Second slide">
         </div>
-        <div class="item">
+        <div class="item fade-slide">
           <img src="images/harry-shelton-pPxhM0CRzl4-unsplash.jpg" alt="Second slide">
         </div>
       </div>
-
-      <div class="customNavigation ssn">
-        <a class="left carousel-control prev-slide transition" href="#myCarousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-        <a class="right carousel-control next-slide transition" href="#myCarousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+      <div class="btns">
+        <span class="prev-slide" onclick="plusSlides(-1)"><i class="fa fa-angle-left"></i></span>
+        <span class="next-slide" onclick="plusSlides(1)"><i class="fa fa-angle-right"></i></span>
       </div>
-
-
     </div>
     <!-- /.carousel -->
     </div>
-    <div class="col-lg-8 col-md-8 col-sm-12">
+    <div class="col-lg-8 col-md-8 col-sm-12 fade-in">
       <div class="text-hydrodynamics">
         <h1>Что входит в <strong>архитектурное решение</strong></h1>
         <p>Современная архитектура - это архитектура 21 века. Ни один стиль не является доминирующим; современные архитекторы работают в нескольких разных стилях: от постмодернизма и высокотехнологичной архитектуры до концептуальных и выразительных форм и дизайнов, в огромных масштабах напоминающих скульптуру. Функционализм — направление в архитектуре XX века, требующее строгого соответствия зданий и сооружений протекающим в них производственным и бытовым процессам (функциям), впервые возник в Германии и Нидерландах.</p>
@@ -108,9 +95,9 @@
       <div class="hydrodynamics-work minus">
         <h5>Процесс нашей работы</h5>
         <ul class="tag-list">
-          <li><a href="#">архитектурное решение</a></li>
-          <li><a href="#">план по строительству</a></li>
-          <li><a href="#">реализация</a></li>
+          <li><a href="">архитектурное решение</a></li>
+          <li><a href="">план по строительству</a></li>
+          <li><a href="">реализация</a></li>
         </ul>
       </div>
       <!-- end hydrodynamics-work -->
@@ -118,7 +105,6 @@
   </div>
 </div>
 <!-- end hydrodynamics -->
-
 <!-- facts -->
 <div class="container-fluid facts post">
   <div class="black"></div>
@@ -132,15 +118,15 @@
         <p>Современная архитектура - это архитектура 21 века. Ни один стиль не является доминирующим; современные архитекторы работают в нескольких разных стилях: от постмодернизма и высокотехнологичной архитектуры до концептуальных и выразительных форм и дизайнов, в огромных масштабах напоминающих скульптуру.</p>
           <div class="numbers row">
             <div class="col-lg-4 col-md-4 col-sm-4">
-              <span class="number">480</span>
+              <span class="number counter" data-target="480">480</span>
               <p>Проектов</p>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4">
-              <span class="number1">151</span>
+              <span class="number1 counter" data-target="151">151</span>
               <p>Макетов</p>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4">
-              <span class="number2">346</span>
+              <span class="number2 counter" data-target="346">346</span>
               <p>Пространств</p>
             </div>
           </div>
@@ -148,20 +134,19 @@
     </div>
  </div>
 </div>
-
 <!-- biloba evo -->
-<div id="door-hinge" class="container wrap post">
+<div id="door-hinge" class="container wrap post fade-in">
   <div class="row biloba-title">
   <h2>Самые масштабные наши проекты</h2>
   </div>
 </div>
-<div class="container wrap biloba post">
+<div class="container wrap biloba post fade-in">
   <div class="row">
   <div class="col-lg-7 col-md-7">
         <ul class="tag-list">
-          <li><a href="#">зона с фудкортами</a></li>
-          <li><a href="#">закрытый парк на территории</a></li>
-          <li><a href="#">рабочие зоны</a></li>
+          <li><a href="">зона с фудкортами</a></li>
+          <li><a href="">закрытый парк на территории</a></li>
+          <li><a href="">рабочие зоны</a></li>
         </ul>
     <div class="thumbnail">
       <img src="images/mini/patrick-tomasso-gMes5dNykus-unsplash.jpg">
@@ -179,13 +164,13 @@
 </div>
 </div>
 <!-- biloba 8010 -->
-<div class="container wrap biloba post">
+<div class="container wrap biloba post fade-in">
   <div class="row">
       <div class="col-lg-7 col-md-7 right-part">
         <ul class="tag-list">
-          <li><a href="#">несколько спортивных залов</a></li>
-          <li><a href="#">рядом открытое поле</a></li>
-          <li><a href="#">бассейны</a></li>
+          <li><a href="">несколько спортивных залов</a></li>
+          <li><a href="">рядом открытое поле</a></li>
+          <li><a href="">бассейны</a></li>
         </ul>
       <div class="thumbnail">
       <img src="images/mini/luca-bravo-SRjZtxsK3Os-unsplash.jpg">
@@ -204,13 +189,13 @@
 </div>
 
 <!-- unica -->
-<div class="container wrap biloba post">
+<div class="container wrap biloba post fade-in">
   <div class="row">
   <div class="col-lg-7 col-md-7">
         <ul class="tag-list">
-          <li><a href="#">открытое пространство</a></li>
-          <li><a href="#">зоны для выставок</a></li>
-          <li><a href="#">лекторий</a></li>
+          <li><a href="">открытое пространство</a></li>
+          <li><a href="">зоны для выставок</a></li>
+          <li><a href="">лекторий</a></li>
         </ul>
     <div class="thumbnail">
       <img src="images/mini/brent-de-ranter-VNQl_4OmZJw-unsplash.jpg">
@@ -230,13 +215,13 @@
 </div>
 
 <!-- triloba -->
-<div class="container wrap biloba post">
+<div class="container wrap biloba post fade-in">
   <div class="row">
     <div class="col-lg-7 col-md-7 right-part">
       <ul class="tag-list">
-        <li><a href="#">уникальный дизайн</a></li>
-        <li><a href="#">множество рабочих зон</a></li>
-        <li><a href="#">зоны с лекториями</a></li>
+        <li><a href="">уникальный дизайн</a></li>
+        <li><a href="">множество рабочих зон</a></li>
+        <li><a href="">зоны с лекториями</a></li>
       </ul>
       <div class="thumbnail">
       <img src="images/mini/lance-anderson-QdAAasrZhdk-unsplash.jpg">
@@ -254,7 +239,7 @@
 </div>
 
 <!-- advantages -->
-<div id="plus" class="container-fluid advantages">
+<div id="plus" class="container-fluid advantages fade-in">
   <div class="black"></div>
     <div class="container wrap">
         <div class="col-lg-5 text-advantages-left">
@@ -281,7 +266,7 @@
 </div>
 
 <!-- bathroom -->
-<div id="bath-hinge" class="container wrap post">
+<div id="bath-hinge" class="container wrap post fade-in">
   <div class="row biloba-title">
        <h2>Направления проектов</h2>
   </div>
@@ -290,8 +275,8 @@
   <div class="row">
     <div class="col-lg-4 col-md-4 col-sm-12 minus-bath bath-1">
         <ul class="tag-list-bathroom">
-          <li><a href="#">многофункциональные центры</a></li>
-          <li><a href="#">работа с комфортом</a></li>
+          <li><a href="">многофункциональные центры</a></li>
+          <li><a href="">работа с комфортом</a></li>
         </ul>
       <div class="thumbnail">
         <img src="images/mini/agustin-uscanga-5DG92KY0R1U-unsplash.jpg">
@@ -301,8 +286,8 @@
     </div>
         <div class="col-lg-4 col-md-4 col-sm-12 minus-bath">
           <ul class="tag-list-bathroom">
-            <li><a href="#">уникальные решения для города</a></li>
-            <li><a href="#">современный город</a></li>
+            <li><a href="">уникальные решения для города</a></li>
+            <li><a href="">современный город</a></li>
           </ul>
       <div class="thumbnail">
         <img src="images/mini/izuddin-helmi-adnan-1e71PSox7m8-unsplash.jpg">
@@ -312,8 +297,8 @@
     </div>
         <div class="col-lg-4 col-md-4 col-sm-12 minus-bath bath-1">
           <ul class="tag-list-bathroom">
-            <li><a href="#">современные жилые комплексы</a></li>
-            <li><a href="#">жизнь с комфортом</a></li>
+            <li><a href="">современные жилые комплексы</a></li>
+            <li><a href="">жизнь с комфортом</a></li>
           </ul>
       <div class="thumbnail">
         <img src="images/mini/matthew-hamilton-fIywSGHYLYM-unsplash.jpg">
@@ -327,7 +312,7 @@
 <!-- end bathroom -->
 
 <!-- partners -->
-<div class="container-fluid facts post">
+<div class="container-fluid facts post fade-in">
   <div class="black"></div>
   <div class="container wrap">
   <div class="col-lg-5 col-md-5 col-sm-12 text-facts-left">
@@ -349,69 +334,53 @@
  </div>
 </div>
 <!-- photo gallery -->
-<div id="photogallery" class="container">
+<div id="photogallery" class="container fade-in">
   <div class="cont-photo">
     <div class="title-photo"><h3>Выполненные проекты:</h3></div>
     <div class="dark-line"></div>
   </div>
   <div class="row">
     <div class="col-lg-4 col-md-6 col-sm-6">
-      <a data-fancybox="gallery" href="images/mini/photogallery/scott-webb-dWuNqs-mewE-unsplash.jpg">
         <img class="img-fluid" src="images/mini/photogallery/Без имени-1.jpg">
-      </a>
     </div>
     <div class="col-lg-8">
-    <div class="col-lg-6 col-md-6 col-sm-6">
-      <a data-fancybox="glassfurniturallery" href="images/mini/photogallery/scott-webb--udZnjsCzsE-unsplash.jpg">
-        <img class="img-fluid" src="images/mini/photogallery/scott-webb--udZnjsCzsE-unsplash.jpg">
-      </a>
+      <div class="col-lg-6 col-md-6 col-sm-6">
+          <img class="img-fluid" src="images/mini/photogallery/scott-webb--udZnjsCzsE-unsplash.jpg">
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6">
+          <img class="img-fluid" src="images/mini/photogallery/andres-garcia-duzqs13jvGc-unsplash.jpg">
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6">
+          <img class="img-fluid" src="images/mini/photogallery/andre-sanano-gQ06DrUzNIk-unsplash.jpg">
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6">
+          <img class="img-fluid" src="images/mini/photogallery/scott-webb-_K-QKkbn7Ds-unsplash.jpg">
+      </div>
     </div>
-    <div class="col-lg-6 col-md-6 col-sm-6">
-      <a data-fancybox="gallery" href="images/mini/photogallery/1.jpg">
-        <img class="img-fluid" src="images/mini/photogallery/andres-garcia-duzqs13jvGc-unsplash.jpg">
-      </a>
-    </div>
-    <div class="col-lg-6 col-md-6 col-sm-6">
-      <a data-fancybox="glassfurniturallery" href="images/mini/photogallery/2.jpg">
-        <img class="img-fluid" src="images/mini/photogallery/andre-sanano-gQ06DrUzNIk-unsplash.jpg">
-      </a>
-    </div>
-        <div class="col-lg-6 col-md-6 col-sm-6">
-      <a data-fancybox="glassfurniturallery" href="images/mini/photogallery/3.jpg">
-        <img class="img-fluid" src="images/mini/photogallery/scott-webb-_K-QKkbn7Ds-unsplash.jpg">
-      </a>
-    </div>
-  </div>
   </div>
   <!-- break -->
   <di class="row">
     <div class="col-lg-4 col-md-6 col-sm-6">
-      <a data-fancybox="gallery" href="images/mini/photogallery/1.jpg">
         <img class="img-fluid" src="images/mini/photogallery/all-bong-L2oedF1AsH8-unsplash.jpg">
-      </a>
     </div>
     <div class="col-lg-4 col-md-6 col-sm-6">
-      <a data-fancybox="glassfurniturallery" href="images/mini/photogallery/grant-lemons-jTCLppdwSEc-unsplash.jpg">
         <img class="img-fluid" src="images/mini/photogallery/grant-lemons-jTCLppdwSEc-unsplash.jpg">
-      </a>
     </div>
       <div class="col-lg-4 col-md-6 col-sm-6">
-      <a data-fancybox="glassfurniturallery" href="images/mini/photogallery/3.jpg">
         <img class="img-fluid" src="images/mini/photogallery/verne-ho-0LAJfSNa-xQ-unsplash.jpg">
-      </a>
     </div>
   </div>
 
   </div>
   <div class="col-lg-12 photo-btn">
-       <p class="photo-button"><a class="btn btn-primary" href="#" role="button">Больше фотографий</a></p>
+       <p class="photo-button"><a class="btn btn-primary" href="" role="button">Больше фотографий</a></p>
   </div>
  </div>
 </div>
 </div>
 <!-- end photogallery -->
 <!-- colors -->
-<div id="colors" class="container wrap post">
+<div id="colors" class="container wrap post fade-in">
   <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12">
       <div class="color-title"><h3><strong>Сотрудничайте</strong> с нами:</h3></div>
@@ -445,23 +414,18 @@
     <div class="col-lg-2 col-md-2 col-sm-2 f-contact">
       <div class="f-title"><h4>Подписывайтесь</h4></div>
        <div class="f-social">
-        <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-vk" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
       </div>
     </div>
     <div class="col-lg-12 col-md-12 col-sm-12 line">&copy; Inspired to some website</div>
   </div>
 </div>
 </div>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script scr="js/bootstrap.min.js"></script>
-<script src="js/carousel.js"></script>
-<script src="js/modal.js"></script>
-<script src="js/collapse.js"></script>
-<script src="js/jquery.viewportchecker.js"></script>
-<script src="js/circles.js"></script>
-<script src="js/owlcarousel/owl.carousel.min.js"></script>
+
+
+<script src="common.js"></script>
 
 </body>
 </html>

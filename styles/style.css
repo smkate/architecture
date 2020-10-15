@@ -209,15 +209,6 @@ ul {
   top: 90%;
   left: 25px;
 }
-/* .social :after {
-  content: "";
-  position: absolute;
-  top: -30px;
-  width: 50px;
-  height: 1px;
-  left: -15px;
-  background: rgba(255, 255, 255, 0.21);
-} */
 .fixed-sidebar .social a {
   font-size: 12px;
   text-transform: uppercase;
@@ -243,27 +234,14 @@ ul {
 @media only screen and (max-device-width: 1005px) {
   .main {
     height: 100vh;
-    /* background: url(../images/main-mobile-1.jpg) no-repeat; */
+    background: url(../images/main-mobile-1.jpg) no-repeat;
   }
 }
 .main-wrap {
-  /* position: absolute;
-  top: 40%;
-  left: 30%; */
   text-transform: uppercase;
   text-align: center;
   font-weight: 1500;
 }
-/* @media only screen and (max-device-width: 1060px) {
-  .main-wrap {
-    left: 22%;
-  }
-}
-@media only screen and (max-device-width: 875px) {
-  .main-wrap {
-    left: 25%;
-  }
-} */
 .main-wrap h2 {
   font-size: 3vw;
   color: #fff;
@@ -404,7 +382,7 @@ ul {
 }
 @media only screen and (max-device-width: 767px) {
   .text-facts-left h3 {
-    font-size: 10vw; /*line-height: 40px;*/
+    font-size: 10vw;
   }
 }
 .light-line {
@@ -467,7 +445,7 @@ ul {
 }
 @media only screen and (max-device-width: 767px) {
   .text-advantages-left h3 {
-    font-size: 10vw; /*line-height: 40px;*/
+    font-size: 10vw;
   }
 }
 @media only screen and (max-device-width: 767px) {
@@ -662,92 +640,6 @@ ul {
 .cont-photo {
   text-align: right;
 }
-/*.fl-cont {
-  width: 100%;
-  display: flex;
-}
-.six {
-  flex: 1;
-  height: 200px;
-  display: flex;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  height: auto; 
-}
-.six-top {
-  flex: 1;
-  height: 200px;
-  display: flex;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  margin-top: -40px;
-}
-.six.i-390 {
-  margin-top: -30px;
-  height: 300px;
-}
-.six.i-360 {
-  height: 200px;
-  margin-top: -160px;
-}
-.two {
-  flex: 3;
-  background-color: yellow;
-  height: auto;
-}
-.bord {
-  flex: 3;
-  background-color: #fff;
-  height: auto;
-}
-.four {
-  flex: 4;
-  background-color: aqua;
-}
-.four-colm {
-  display: flex;
-  flex: 4;
-  flex-direction: column;
-}
-.colomn {
-  display: flex;
-  flex: 1.5;
-  flex-direction: column;
-  margin-left: 10px;
-}
-.colm {
-  flex: 1;
-  background-color: hotpink;
-}
-.colm-1 {
-  flex: 1;
-  background-color: hotpink;
-  margin-bottom: 5px;
-  margin-top: 5px; 
-}
-.colm-2 {
-  flex: 3;
-  display: flex;
-  background-color: blue;
-  margin-bottom: 5px;
-}
-.colm-3 {
-  flex: 1.5;
-  display: flex;
-}
-.colm-4 {
-  flex: 4;
-  background-color: red;
-}
-.fl-cont img {
-  height: 100%;
-  width: 100%;
-}
-
-@media only screen and (max-device-width: 1300px) {
-  .colomn {display: none;}
-}
-*/
 /*------biloba-bathroom------*/
 .biloba-bathroom h3 {
   color: #333;
